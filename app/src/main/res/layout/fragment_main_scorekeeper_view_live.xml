@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_800" >
+
+    <LinearLayout
+        android:id="@+id/layout_livemodeplayingTeams"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textview_playingTeams_Team1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_floating_material_light"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:gravity="start"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Team 1"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_floating_material_light"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:text="VERSUS"/>
+
+        <TextView
+            android:id="@+id/textview_playingTeams_Team2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_floating_material_light"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:text="Team 2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_livemodescoretime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_playingTeams_Team1_SCORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textColor="@color/accent_material_dark"
+            android:layout_weight="0"
+            android:text="00"/>
+
+        <DigitalClock
+            android:id="@+id/digitalClock_GameTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_floating_material_light"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textview_playingTeams_Team2_SCORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textColor="@color/accent_material_dark"
+            android:layout_weight="0"
+            android:text="00"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/layout_divider_livemode_1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:background="@color/material_blue_grey_950" />
+
+    <RelativeLayout
+        android:id="@+id/layout_currentLiveGameStats"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview_LiveGameFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_beginLiveMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_beginLiveMode"
+            android:onClick="startLiveGame"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancelLiveGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight="0"
+                android:text="@string/btn_cancelLiveGame"
+                android:onClick="cancelLiveGame"/>
+
+            <Button
+                android:id="@+id/btn_addGameEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_addGameEvent"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:onClick="addLiveGameEvent"/>
+
+            <Button
+                android:id="@+id/btn_submitLiveGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight="0"
+                android:text="@string/btn_submitLiveGame"
+                android:onClick="endLiveGame"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

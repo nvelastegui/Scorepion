@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Scorepion</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- login View Strings -->
+    <string name="string_title_scorepion">Scorepion</string>
+    <string name="string_btn_loginAsScorekeeper">Scorekeeper</string>
+    <string name="string_btn_loginAsFan">Fan</string>
+    <string name="string_title_lastname">Velastegui</string>
+
+    <!-- main Scorekeeper View Strings -->
+    <string name="title_activity_main_scorekeeper_view">Scorekeeper</string>
+    <string name="title_live">Live</string>
+    <string name="title_batch">Batch</string>
+    <string name="title_player">Player</string>
+    <string name="title_league">League</string>
+    <string name="actionMenuLogOut">Log Out</string>
+
+    <!-- main -> live mode view strings -->
+    <string name="btn_addGameEvent">Add Game Event</string>
+    <string name="btn_submitLiveGame">Submit</string>
+    <string name="btn_cancelLiveGame">Cancel</string>
+    <string name="btn_beginLiveMode">Start Live Game</string>
+    <string-array name="array_live_addwhat">
+        <item>Shot</item>
+        <item>Infraction</item>
+    </string-array>
+    <string-array name="array_live_chooseteam">
+        <item>Team 1 (Left)</item>
+        <item>Team 2 (Right)</item>
+    </string-array>
+
+    <!-- main -> batch mode view strings -->
+    <string-array name="array_truefalse">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- main -> player analysis view strings -->
+    <string name="title_topPlayers">Top Players By</string>
+    <string-array name="array_topPlayersByOptions">
+        <item>Total Score</item>
+        <item>Total Penalties</item>
+    </string-array>
+
+    <!-- main -> league analysis view strings -->
+    <string name="title_topTeams">Top Teams By</string>
+    <string-array name="array_topTeamsByOptions">
+        <item>Total Points</item>
+        <item>Total Goals</item>
+        <item>Total Penalties</item>
+    </string-array>
+
+    <!-- main Fan View Strings -->
+    <string name="title_activity_main_fan_view">Fan</string>
+    <string name="title_player_fanview">Player Analysis</string>
+    <string name="title_league_fanview">League Analysis</string>
+        <!-- See main Scorekeeper View Strings for titles -->
+
+
+</resources>

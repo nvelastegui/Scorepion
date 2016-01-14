@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="ca.mcgill.ecse321.group14.scorepion.viewcontrollers.mainScorekeeperView">
+
+      <item android:id="@+id/action_settings"
+          android:title="@string/actionMenuLogOut"
+          android:orderInCategory="100"
+          app:showAsAction="always"
+          android:onClick="performLogOut"/>
+
+      <item
+          android:id="@+id/menuItem_setDataToTemplate1"
+          android:title="Set Game Data To Template1"
+          android:orderInCategory="101"
+          app:showAsAction="never"
+          android:onClick="resetDataToTemplate1" />
+
+</menu>
